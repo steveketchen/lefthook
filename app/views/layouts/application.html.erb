@@ -10,11 +10,19 @@
 
   <body>
   	<div class="container header">
-	  	<div class="row">
-	  		<div class="col">
-	  			<h1 class="display-1">LEFTHOOK</h1>
+	  	<div class="row  black-bg  text-center">
+	  		<div class="col-md-12">
+	  			<br /><%= image_tag "text-extruded.png", :class => "img-fluid" %>
 	  		</div>
 	  	</div>
+    </div>
     <%= yield %>
+    <div class="container header">
+      <div class="row  black-bg  text-center">
+        <div class="col-md-12">
+          <h1 class="display-1">&nbsp;</h1>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

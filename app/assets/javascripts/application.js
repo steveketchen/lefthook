@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require "sqlite3"
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
@@ -17,4 +18,4 @@
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require_tree .
-require "sqlite3"
+

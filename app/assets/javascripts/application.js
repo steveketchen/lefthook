@@ -17,4 +17,4 @@
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require_tree .
-//= require "sqlite3"
+require "sqlite3"

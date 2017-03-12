@@ -1,8 +1,18 @@
 @import "bootstrap";
+body{
+	background-color: black;
+}
 .black-bg {
 	background-color: black;
 	color: white;
 }
 .red-bg{
 	background-color: #ff5555;
+}
+.smaller{
+	zoom: 80%;
+	padding: 30px 0px 30px 0px;
+}
+.purple{
+	color: #AA55FF;
 }

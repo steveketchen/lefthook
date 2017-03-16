@@ -1,5 +1,10 @@
 require_relative 'boot'
 
+config.action_dispatch.default_headers = {
+    'X-Frame-Options' => 'ALLOWALL'
+}
+# changes iframe rules to allow for custom domain redirects
+
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems

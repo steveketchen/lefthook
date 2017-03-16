@@ -1,9 +1,10 @@
 require_relative 'boot'
 
+
+# changes iframe rules to allow for custom domain redirects
 config.action_dispatch.default_headers = {
     'X-Frame-Options' => 'ALLOWALL'
 }
-# changes iframe rules to allow for custom domain redirects
 
 require 'rails/all'
 

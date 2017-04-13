@@ -1,14 +1,35 @@
 <div class="container">
 	<div class="row justify-content-center">
-		<div class="col-12 col-lg-8">
-			<br /><%= image_tag "Final Portrait.jpg", :class => "img-fluid text-center" %>
+		<div class="col-11 col-lg-8">
+			<%= image_tag "Final Portrait.jpg", :class => "img-fluid text-center" %>
 		</div>
 		<div class="row black-bg text-center justify-content-center">
-	        <div class="col-12">
-	          <br /><%= image_tag "Lefthook-Vol-1-Banner.gif", :class => "img-fluid" %>
-	        </div>        
+	        <div class="col-11">
+	          <%= image_tag "Lefthook-Vol-1-Banner.gif", :class => "img-fluid" %>
+	        </div>
 	    </div>
-	    <div class="row spacer">&nbsp;
-	    </div>
+        <div class="spacer">
+        </div>
 	</div>
+  	<div class="row justify-content-center">
+    	<div class="col-6 text-center"> 
+       		<p class="lead white">PRE-ORDER <br /></p>
+          	<a href="https://www.amazon.com/gp/product/B06Y4WKD8R">
+				<%= image_tag "amazon-button.png", :height => "44px" %>
+			</a>  
+    </div>
+    <div class="col-6 text-center">
+      <p class="lead white">FOLLOW <br /></p>
+      <p>
+        <a href="https://twitter.com/lefthookmusic" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @lefthookmusic</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </p>          
+      <p>
+        <div class="fb-like" data-href="https://www.facebook.com/lefthookmusic" data-width="60" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+      </p>
+      <p>
+        <a href="http://soundcloud.com/lefthookmusic">
+          <%= image_tag "soundcloud.png", :height => "40px" %>
+        </a>
+      </p>
+    </div>
 </div>

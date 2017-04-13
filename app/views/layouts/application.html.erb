@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
 // Prevent variables from being global      
 (function () {
       /*
@@ -18,8 +26,7 @@
         div.parentNode.removeChild(div);
     }
 })();
-</script>
-<script>
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -40,29 +47,15 @@
 
   <body>
   	<div class="container header">
-	  	<div class="row  black-bg  justofy-content-center">
-	  		<div class="col-12">
+	  	<div class="row  black-bg  justify-content-center">
+	  		<div class="col-11">
 	  			<br /><%= image_tag "Lefthook-Web-Banner.gif", :class => "img-fluid" %>
 	  		</div>
 	  	</div>
     </div>
     <%= yield %>
-    <div class="container header">
+    <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 text-center"> 
-          <a href="https://www.amazon.com/gp/product/B06Y4WKD8R">
-            <p class="lead white">PRE-ORDER <br />
-              <%= image_tag "amazon-button.png", :height => "44px" %>
-            </p>
-          </a>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 text-center">
-          <p class="lead white">FOLLOW <br />
-            <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Flefthookmusic&color=orange_white&size=40" style="width: 40px; height: 40px;"></iframe>
-          </p>
-        </div>
-      </div>      
-      <div class="row justify-content-left">
         <div class="col">
           <p class="text-center">
             &copy;2017 New York Nausea, All Rights Reserved
